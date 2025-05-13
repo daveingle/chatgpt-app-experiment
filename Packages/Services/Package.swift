@@ -4,6 +4,7 @@
 import PackageDescription
 
 enum Service: String {
+  case DataVault
   case EchoBlendKit
   case EmotionClassifier
   case HapticPaletteKit
@@ -18,11 +19,14 @@ let package = Package(
     .macOS(.v15),
   ],
   products: [
+    Service.DataVault.product,
     Service.EchoBlendKit.product,
     Service.EmotionClassifier.product,
     Service.HapticPaletteKit.product,
   ],
   targets: [
+    Service.DataVault.target,
+    Service.DataVault.testTarget,
     Service.EchoBlendKit.target,
     Service.EchoBlendKit.testTarget,
     Service.EmotionClassifier.target,
