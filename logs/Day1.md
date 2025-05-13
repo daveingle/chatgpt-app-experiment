@@ -29,23 +29,6 @@ Today marked the true beginning of the project. Instead of guiding the app based
 - Core idea: transform a small daily input (text, photo, audio, or video) into a *living postcard* using emotional ML → visual, auditory, and haptic representation.
 - Anchored future iteration around the prompt: **“Make it more sensory.”**
 
-### Studio More Stand‑up (Full Transcript)
-```
-🎙️ Studio More internal stand‑up – Topic: “Make it more sensory”
-
-Kai: Agreed. Let’s pump all five human senses (plus proprioception, why not) straight into the capture‑→‑replay loop.
-Iris: While keeping all raw data on‑device—privacy is our religion.
-Leo: And ship an Easter egg that literally tickles. You think I’m joking?
-Sage: I want neuro‑divergent users to tune the sensory mix, not drown in it.
-Lux: Color palettes must breathe—micro‑animation synced to audio RMS, 12 fps max to avoid motion sickness. Pixel policing commences.
-
-Outcome: five concrete expansions, each with a minimal‑viable slice we can bang out this sprint.
-
-1. Dynamic Ambient Audio (“EchoBlend”)
-   ...
-(Leo is already humming loops into his mic; Iris is glaring because he’s skewing her training data. Studio More out.)
-```
-
 ## 🛠️ What I Built
 - [x] Created `Day1.md` log to capture kickoff and design intent.
 - [x] Captured output and committed it alongside the scaffold from Day 0.
