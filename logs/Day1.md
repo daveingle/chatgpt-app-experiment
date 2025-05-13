@@ -32,13 +32,26 @@ Today marked the true beginning of the project. Instead of guiding the app based
 ## 🛠️ What I Built
 - [x] Created `Day1.md` log to capture kickoff and design intent.
 - [x] Captured output and committed it alongside the scaffold from Day 0.
-- [ ] No code changes today; this was purely a direction-setting and worldbuilding day.
+- [x] Initial models and modules under construction (see SprintBoard.md)
+- [x] DataVault.swift completed
+- [ ] VoiceEmotionClassifier.mlmodel in progress
+- [ ] ChromaPreviewView.swift scaffolded
+- [ ] BLE schema (SmellLater) committed but untested
 
 ## 📸 Screenshot(s)
 
 ![Synesthetic Journal Brainstorm](../media/day1-senses-brainstorm.jpg)
 
-## 🚧 Challenges or Oddities
-- The panel format is more whimsical than practical, but it effectively surfaces creative divergence.
-- All directions were strong contenders—settling on one was tough.
-- No immediate technical constraints were discussed—may need to temper expectations in later iterations.
+
+## 🧩 Sprint Board Snapshot (EOD)
+
+| Owner   | Ticket                        | DoD                                   |
+|---------|-------------------------------|-------------------------------------|
+| Iris    | MLVoiceEmotionClassifier.mlmodel | 90 %+ accuracy, < 10 ms inference   |
+| Iris    | DataVault.swift                 | Encrypted Core Data vault compiles (DONE) |
+| Sage    | HapticPalette.swift            | Generates .ahap file felt on devices|
+| Lux     | ChromaPreviewView.swift        | Live preview matches haptics        |
+| Kai     | OrbScene.swift                 | Vision OS orb loads test postcard   |
+| Dr Nova | Doc update (DONE)              | Merged in main                      |
+| Dr Nova | SmellLater BLE schema          | BLE UUID + 4‑field payload committed|
+| Dr Nova | Privacy & Ethics sidebar       | docs/PrivacyEthics.md drafted & PR open |
