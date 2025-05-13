@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8B819EAD2DD270450011BEB7 /* PrompCraft in Frameworks */ = {isa = PBXBuildFile; productRef = 8B819EAC2DD270450011BEB7 /* PrompCraft */; };
 		8B819EFA2DD272E70011BEB7 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B819EA02DD26FC80011BEB7 /* RootView.swift */; };
-		8B819EFB2DD272E70011BEB7 /* PrompCraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B819E9F2DD26FC80011BEB7 /* PrompCraft.swift */; };
+		8B819EFB2DD272E70011BEB7 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B819E9F2DD26FC80011BEB7 /* App.swift */; };
 		8B819EFC2DD272F20011BEB7 /* PromptCraftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B819EA52DD26FC80011BEB7 /* PromptCraftTests.swift */; };
 		8B819EFD2DD272FA0011BEB7 /* PromptCraftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B819EA72DD26FC80011BEB7 /* PromptCraftUITests.swift */; };
 		8B819EFE2DD273020011BEB7 /* PromptCraftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B819EA82DD26FC80011BEB7 /* PromptCraftUITestsLaunchTests.swift */; };
@@ -39,7 +39,7 @@
 		8B819E9A2DD26FC80011BEB7 /* project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project.xcconfig; sourceTree = "<group>"; };
 		8B819E9B2DD26FC80011BEB7 /* target.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = target.xcconfig; sourceTree = "<group>"; };
 		8B819E9D2DD26FC80011BEB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8B819E9F2DD26FC80011BEB7 /* PrompCraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrompCraft.swift; sourceTree = "<group>"; };
+		8B819E9F2DD26FC80011BEB7 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		8B819EA02DD26FC80011BEB7 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		8B819EA22DD26FC80011BEB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8B819EA52DD26FC80011BEB7 /* PromptCraftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptCraftTests.swift; sourceTree = "<group>"; };
@@ -48,10 +48,39 @@
 		8B819EAE2DD2704F0011BEB7 /* Packages */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Packages; sourceTree = SOURCE_ROOT; };
 		8B819EAF2DD270E30011BEB7 /* tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = tests.xcconfig; sourceTree = "<group>"; };
 		8B819EB02DD270E30011BEB7 /* uitests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = uitests.xcconfig; sourceTree = "<group>"; };
+		8B819EFF2DD3C0420011BEB7 /* Day1.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Day1.md; sourceTree = "<group>"; };
 		8BCE69082DD267FC0083B3D2 /* PromptCraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PromptCraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCE691A2DD267FD0083B3D2 /* PromptCraftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PromptCraftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCE69242DD267FD0083B3D2 /* PromptCraftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PromptCraftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8B819F012DD3C6380011BEB7 /* standups */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = standups;
+			sourceTree = "<group>";
+		};
+		8B819F022DD3C64C0011BEB7 /* sprints */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = sprints;
+			sourceTree = "<group>";
+		};
+		8B819F042DD3C7310011BEB7 /* artifacts */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = artifacts;
+			sourceTree = "<group>";
+		};
+		8BB351BD2DD3D3F8001923B8 /* architecture */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = architecture;
+			sourceTree = "<group>";
+		};
+		8BB351BF2DD3D4B6001923B8 /* personas */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = personas;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8BCE69052DD267FC0083B3D2 /* Frameworks */ = {
@@ -82,6 +111,11 @@
 		8B819E832DD26E870011BEB7 /* docs */ = {
 			isa = PBXGroup;
 			children = (
+				8BB351BF2DD3D4B6001923B8 /* personas */,
+				8BB351BD2DD3D3F8001923B8 /* architecture */,
+				8B819F042DD3C7310011BEB7 /* artifacts */,
+				8B819F022DD3C64C0011BEB7 /* sprints */,
+				8B819F012DD3C6380011BEB7 /* standups */,
 			);
 			path = docs;
 			sourceTree = "<group>";
@@ -90,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				8B819E842DD26E870011BEB7 /* Day0.md */,
+				8B819EFF2DD3C0420011BEB7 /* Day1.md */,
 				8B819E852DD26E870011BEB7 /* template.md */,
 			);
 			path = logs;
@@ -131,7 +166,7 @@
 		8B819EA12DD26FC80011BEB7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				8B819E9F2DD26FC80011BEB7 /* PrompCraft.swift */,
+				8B819E9F2DD26FC80011BEB7 /* App.swift */,
 				8B819EA02DD26FC80011BEB7 /* RootView.swift */,
 			);
 			path = Sources;
@@ -347,7 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B819EFA2DD272E70011BEB7 /* RootView.swift in Sources */,
-				8B819EFB2DD272E70011BEB7 /* PrompCraft.swift in Sources */,
+				8B819EFB2DD272E70011BEB7 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
