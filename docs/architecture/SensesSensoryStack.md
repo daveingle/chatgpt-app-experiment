@@ -26,7 +26,7 @@ graph LR
     G4[SmellLaterProfile.json 🧪]:::gen
   end
   %% ───── Cross‑device Rendering ─────
-  subgraph Cross‑device Rendering
+  subgraph "Cross-device Rendering"
     R1[iOS Postcard View 📱]:::rend
     R2[watchOS Haptic Player ⌚️]:::rend
     R3[visionOS Spatial Orb 👓]:::rend
