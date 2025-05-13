@@ -25,6 +25,7 @@ let package = Package(
         name: "PrompCraft",
         dependencies: [
           .product(name: "ChromaPreview", package: "Features"),
+          .product(name: "DataVault", package: "Services"),
           .product(name: "EchoBlendKit", package: "Services"),
           .product(name: "EmotionClassifier", package: "Services"),
           .product(name: "HapticPaletteKit", package: "Services"),
