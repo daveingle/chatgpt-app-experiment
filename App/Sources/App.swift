@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct PrompCraft: App {
+struct App: SwiftUI.App {
 
     var body: some Scene {
         WindowGroup {
