@@ -41,6 +41,12 @@ Alright, Dr. Nova wants an architectural diagram for the SENSES Sensory Stack in
 
 I need to create the architectural diagram for the SENSES Sensory Stack, which includes layers like Capture, ML Processing, Asset Generation, and Rendering. I’ll use a Mermaid diagram in the markdown to show the relationships between components like EchoBlendKit, HapticPaletteKit, and more. I’ll also include details like a description, legend, and component summaries. The SmellLater extension could be added as part of the rendering. Let’s put everything into the file and make it detailed but clear!
 
+The user is facing an error in their Mermaid diagram, specifically regarding the invalid text “Cross-device Rendering” on line 18. It’s possible there’s an issue with the hyphen, or maybe a nonbreaking hyphen is being used. Mermaid allows spaces in subgraph labels, but it may not recognize hyphens as part of the label. I should check the code’s line numbers and formatting to pinpoint the exact problem and suggest a fix.
+
+Looks like the error might be related to the naming of the subgraph “Cross‑device Rendering.” The issue seems to be with the hyphen or a non-breaking space character. In Mermaid, subgraph names usually work with spaces but not hyphens, as that could be interpreted as separating nodes. I can try renaming the subgraph to “Cross_device_Rendering” or using quotes around “Cross‑device Rendering” to preserve the label. I’ll also make sure there are no unwanted non-breaking spaces.
+
+I need to update the SprintBoard.md file with new task details. Dr. Nova’s “Doc update” task on architecture is finished, so I’ll either mark it as done or move it to the “Done” section. Then, I’ll add Dr. Nova’s new tasks: “SmellLater BLE schema” and “Privacy & Ethics sidebar.” I’ll also update the DoD columns while I’m at it. I’ll need to modify the table accurately—probably swapping out the old row for two new ones. I’ll use oboe.edit_file to make these changes.
+
 # Iris
 
 It looks like the user wants me to update the Iris.md file to include the tasks previously mentioned. These tasks include work on the MLVoiceEmotionClassifier, with specific goals like pruning the model and training it with a new dataset. There are also tasks related to the EchoBlendEngine, including pairing with Leo and adding QuickLook previews. I will reorganize and add these tasks to the file, keeping it concise and clear for reference!
