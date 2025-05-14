@@ -5,23 +5,24 @@ Keep calm and prompt on.
 
 ```
 .
-├── App
-│   ├── config/            # Build configuration files (.xcconfig)
-│   ├── Resources/         # Xcode asset catalogs (AppIcon, AccentColor)
-│   ├── Sources/           # Main app source files (RootView, App entrypoint)
-│   ├── SupportingFiles/   # Preview content for Xcode
-│   ├── Tests/             # Unit tests
-│   └── UITests/           # UI test targets
+├── App/
 ├── Packages/
-│   ├── Package.swift      # SwiftPM entry point
-│   └── PrompCraft/        # Local Swift Package
-├── PromptCraft.xcodeproj/ # Xcode project definition
-├── docs/                  # Longform documentation (optional)
-├── logs/                  # Daily logs of progress and prompts
-├── media/                 # Screenshots and illustrations
-├── Scripts/               # Utility scripts (future use)
-└── Tooling/               # Dev tooling (future use)
+│   ├── Features/                # End‑user UI layers
+│   └── Services/                # Reusable engines & data stores
+├── docs/
+│   ├── architecture/
+│   │   ├── feature-plans/       # Per‑feature specs & RFCs
+│   │   └── SensesSensoryStack.md
+│   ├── artifacts/               # Meeting minutes, diagrams
+│   ├── personas/
+│   └── standups/
+├── logs/                        # Daily developer journals
+├── media/                       # Screenshots & illustrations
+├── Scripts/
+└── Tooling/
 ```
+
+*Tip:* Generated project trees live in `project_tree.txt` for quick diff‑checking.
 
 🔤 Lowercase directories (`logs`, `media`) are for passive content and assets.  
 🧱 Capitalized directories (`Sources`, `Tooling`) are reserved for executable code and dev infrastructure.
@@ -35,16 +36,11 @@ This section collects conventions as they emerge during the project:
 - 🗓️ Each day’s work is done on a `dayN` branch and merged into `main` when complete
 - 📝 Daily log files are stored in `logs/DayN.md` using a consistent template
 - 🧪 No scripting or automation until patterns prove themselves (avoid premature optimization)
+- ✏️  Every new capability begins with a *Feature‑Plan* markdown spec placed in `docs/architecture/feature-plans/`.
+- 📊  Stand‑up summaries live in `docs/standups/DayN_Standup_Summary.md` and link back to sprint‑board tickets.
 
-## ✅ Day 0 Summary
+## ✅ Progress at a Glance
 
-We set the foundation.
-
-- Created the repository and initial project structure
-- Named the app `PromptCraft`
-- Organized folders for long-term clarity (`App/`, `Packages/`, `logs/`, etc.)
-- Set up a `pre-commit` hook to sanitize image metadata
-- Added `.DS_Store` to `.gitignore`
-- Documented project conventions and started logging
-
-👉 Read the full log here: [logs/Day0.md](logs/Day0.md)
+- **Day 0:** Project scaffolding & repo hygiene
+- **Day 1:** Persona consolidation and diagram‑first gate
+- **Day 2:** Feature‑Plan workflow established, sprint board wired

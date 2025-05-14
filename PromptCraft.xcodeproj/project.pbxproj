@@ -52,17 +52,13 @@
 		8BCE69082DD267FC0083B3D2 /* PromptCraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PromptCraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCE691A2DD267FD0083B3D2 /* PromptCraftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PromptCraftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCE69242DD267FD0083B3D2 /* PromptCraftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PromptCraftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BEFEC902DD537FE0090DAB0 /* Day2.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Day2.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8B819F012DD3C6380011BEB7 /* standups */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = standups;
-			sourceTree = "<group>";
-		};
-		8B819F022DD3C64C0011BEB7 /* sprints */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = sprints;
 			sourceTree = "<group>";
 		};
 		8B819F042DD3C7310011BEB7 /* artifacts */ = {
@@ -114,7 +110,6 @@
 				8BB351BF2DD3D4B6001923B8 /* personas */,
 				8BB351BD2DD3D3F8001923B8 /* architecture */,
 				8B819F042DD3C7310011BEB7 /* artifacts */,
-				8B819F022DD3C64C0011BEB7 /* sprints */,
 				8B819F012DD3C6380011BEB7 /* standups */,
 			);
 			path = docs;
@@ -125,6 +120,7 @@
 			children = (
 				8B819E842DD26E870011BEB7 /* Day0.md */,
 				8B819EFF2DD3C0420011BEB7 /* Day1.md */,
+				8BEFEC902DD537FE0090DAB0 /* Day2.md */,
 				8B819E852DD26E870011BEB7 /* template.md */,
 			);
 			path = logs;
