@@ -1,0 +1,118 @@
+.
+├── App
+│   ├── config
+│   │   ├── project.xcconfig
+│   │   ├── target.xcconfig
+│   │   ├── tests.xcconfig
+│   │   └── uitests.xcconfig
+│   ├── Resources
+│   │   └── Assets.xcassets
+│   │       ├── AccentColor.colorset
+│   │       │   └── Contents.json
+│   │       ├── AppIcon.appiconset
+│   │       │   └── Contents.json
+│   │       └── Contents.json
+│   ├── Sources
+│   │   ├── App.swift
+│   │   └── RootView.swift
+│   ├── SupportingFiles
+│   │   └── Preview Content
+│   │       └── Preview Assets.xcassets
+│   │           └── Contents.json
+│   ├── Tests
+│   │   └── PromptCraftTests.swift
+│   └── UITests
+│       ├── PromptCraftUITests.swift
+│       └── PromptCraftUITestsLaunchTests.swift
+├── docs
+│   ├── architecture
+│   │   ├── feature-plans
+│   │   │   ├── ChromaPreview-FeaturePlan-Lux.md
+│   │   │   ├── EchoBlend-FeaturePlan-Iris,Leo.md
+│   │   │   ├── HapticPalette-FeaturePlan-Sage.md
+│   │   │   └── Orb-FeaturePlan-Kai.md
+│   │   └── SensesSensoryStack.md
+│   ├── artifacts
+│   │   ├── Meeting1.md
+│   │   └── Meeting2.md
+│   ├── personas
+│   │   └── personas.md
+│   └── standups
+│       └── Day1_Standup_Summary.md
+├── logs
+│   ├── Day0.md
+│   ├── Day1.md
+│   ├── Day2.md
+│   └── template.md
+├── media
+│   ├── day0-add-local-package.png
+│   ├── day0-create-repo.png
+│   ├── day0-empty-package-dependencies.png
+│   ├── day0-package-structure.png
+│   ├── day0-xcode-build-settings-after.png
+│   ├── day0-xcode-build-settings-before.png
+│   ├── day0-xcode-build.png
+│   ├── day0-xcode-project-after.png
+│   ├── day0-xcode-project-before.png
+│   ├── day0-xcode-project-naming.png
+│   ├── day0-xcode-template-selection.png
+│   └── day0-xcode-xcconfig-wiring.png
+├── Packages
+│   ├── Features
+│   │   ├── ChromaPreview
+│   │   │   ├── Sources
+│   │   │   │   └── ChromaPreviewView.swift
+│   │   │   └── Tests
+│   │   │       └── ChromaPreviewTests.swift
+│   │   └── Package.swift
+│   ├── Package.swift
+│   ├── PrompCraft
+│   │   └── Sources
+│   │       └── PrompCraft.swift
+│   └── Services
+│       ├── DataVault
+│       │   ├── Sources
+│       │   │   ├── DataVault.swift
+│       │   │   ├── KeyHelpers.swift
+│       │   │   ├── NSPersistentCoordinator+Secured.swift
+│       │   │   └── VaultEntity.swift
+│       │   └── Tests
+│       │       └── DataVaultTests.swift
+│       ├── EchoBlendKit
+│       │   ├── Sources
+│       │   │   └── EchoBlendEngine.swift
+│       │   └── Tests
+│       │       └── EchoBlendKitTests.swift
+│       ├── EmotionClassifier
+│       │   ├── Sources
+│       │   │   └── EmotionClassifier.swift
+│       │   └── Tests
+│       │       └── EmotionClassifierTests.swift
+│       ├── HapticPaletteKit
+│       │   ├── Sources
+│       │   │   └── HapticPalette.swift
+│       │   └── Tests
+│       │       └── HapticPaletteKitTests.swift
+│       └── Package.swift
+├── project_tree.txt
+├── PromptCraft.xcodeproj
+│   ├── project.pbxproj
+│   ├── project.xcworkspace
+│   │   ├── contents.xcworkspacedata
+│   │   ├── xcshareddata
+│   │   │   └── swiftpm
+│   │   │       └── configuration
+│   │   └── xcuserdata
+│   │       └── davidingle.xcuserdatad
+│   │           └── UserInterfaceState.xcuserstate
+│   └── xcuserdata
+│       └── davidingle.xcuserdatad
+│           ├── xcdebugger
+│           │   └── Breakpoints_v2.xcbkptlist
+│           └── xcschemes
+│               └── xcschememanagement.plist
+├── README.md
+├── Scripts
+└── Tooling
+
+54 directories, 62 files
