@@ -9,12 +9,9 @@ enum Feature: String {
 }
 
 let package = Package(
-    name: "Features",
+    name: "ChromaPreview",
     platforms: [
-      .iOS(.v17),
-      .watchOS(.v10),
-      .visionOS(.v1),
-      .macOS(.v15),
+      .iOS(.v17)
     ],
     products: [
       Feature.ChromaPreview.product
@@ -51,16 +48,14 @@ fileprivate extension Feature {
     switch target {
     case .Source:
         .target(
-          name: rawValue,
-          path: rawValue + "/Sources"
+          name: rawValue
         )
     case .Tests:
         .testTarget(
           name: rawValue + "Tests",
           dependencies: [
             .target(name: rawValue)
-          ],
-          path: rawValue + "/Tests"
+          ]
         )
     }
   }

@@ -4,35 +4,21 @@
 import PackageDescription
 
 enum Service: String {
-  case DataVault
   case EchoBlendKit
-  case EmotionClassifier
-  case HapticPaletteKit
 }
 
 let package = Package(
-  name: "Services",
+  name: "EchoBlendKit",
   platforms: [
     .iOS(.v17),
-    .watchOS(.v10),
-    .visionOS(.v1),
-    .macOS(.v15),
+    .watchOS(.v10)
   ],
   products: [
-    Service.DataVault.product,
     Service.EchoBlendKit.product,
-    Service.EmotionClassifier.product,
-    Service.HapticPaletteKit.product,
   ],
   targets: [
-    Service.DataVault.target,
-    Service.DataVault.testTarget,
     Service.EchoBlendKit.target,
     Service.EchoBlendKit.testTarget,
-    Service.EmotionClassifier.target,
-    Service.EmotionClassifier.testTarget,
-    Service.HapticPaletteKit.target,
-    Service.HapticPaletteKit.testTarget,
   ]
 )
 
@@ -62,16 +48,14 @@ fileprivate extension Service {
     switch target {
     case .Source:
         .target(
-          name: rawValue,
-          path: rawValue + "/Sources"
+          name: rawValue
         )
     case .Tests:
         .testTarget(
           name: rawValue + "Tests",
           dependencies: [
             .target(name: rawValue)
-          ],
-          path: rawValue + "/Tests"
+          ]
         )
     }
   }
