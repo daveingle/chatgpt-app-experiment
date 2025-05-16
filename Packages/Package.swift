@@ -17,18 +17,21 @@ let package = Package(
       targets: ["PrompCraft"])
     ],
     dependencies: [
-      .package(name: "Features", path: "./Features"),
-      .package(name: "Services", path: "./Services"),
+      .package(name: "ChromaPreview", path: "./Features/ChromaPreview"),
+      .package(name: "DataVault", path: "./Services/DataVault"),
+      .package(name: "EchoBlendKit", path: "./Services/EchoBlendKit"),
+      .package(name: "EmotionClassifier", path: "./Services/EmotionClassifier"),
+      .package(name: "HapticPaletteKit", path: "./Services/HapticPaletteKit"),
     ],
     targets: [
       .target(
         name: "PrompCraft",
         dependencies: [
-          .product(name: "ChromaPreview", package: "Features"),
-          .product(name: "DataVault", package: "Services"),
-          .product(name: "EchoBlendKit", package: "Services"),
-          .product(name: "EmotionClassifier", package: "Services"),
-          .product(name: "HapticPaletteKit", package: "Services"),
+          .product(name: "ChromaPreview", package: "ChromaPreview"),
+          .product(name: "DataVault", package: "DataVault"),
+          .product(name: "EchoBlendKit", package: "EchoBlendKit"),
+          .product(name: "EmotionClassifier", package: "EmotionClassifier"),
+          .product(name: "HapticPaletteKit", package: "HapticPaletteKit"),
         ],
         path: "PrompCraft/Sources"
       ),
